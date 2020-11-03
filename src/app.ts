@@ -24,6 +24,8 @@ export class app {
 
   routes() {
     this.app.use(IndexRoutes);
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: false }));
   }
 
   async listen() {
