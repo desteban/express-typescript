@@ -1,7 +1,7 @@
 import { createPool } from "mysql2/promise";
 import { keys } from "./keys";
 
-function Connect() {
+export function Connect() {
   const connection = createPool({
     host: keys.host,
     user: keys.user,
