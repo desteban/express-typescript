@@ -4,4 +4,5 @@ const express_1 = require("express");
 const index_controller_1 = require("../controllers/index.controller");
 const router = express_1.Router();
 router.route("/").get(index_controller_1.indexController);
+router.route("/dist").get(index_controller_1.mensajes);
 exports.default = router;
