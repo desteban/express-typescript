@@ -1,6 +1,5 @@
 import express, { Application } from "express";
-import morgan from "morgan";
-import router from "./routes/index.routes";
+// import morgan from "morgan";
 
 import IndexRoutes from "./routes/index.routes";
 
@@ -20,7 +19,7 @@ export class app {
   }
 
   middlewares() {
-    this.app.use(morgan("dev"));
+    // this.app.use(morgan("dev"));
     this.app.use(express.json());
     // datos de formulario
     this.app.use(express.urlencoded({ extended: false }));
